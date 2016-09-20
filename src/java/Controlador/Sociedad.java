@@ -12,13 +12,13 @@ import java.sql.SQLException;
  *
  * @author Administrador
  */
-public class Mail {
+public class Sociedad {
 
      private int id_tmail;
     private String mail;
   
 
-    public Mail(int id_tmail, String mail) {
+    public Sociedad(int id_tmail, String mail) {
         this.id_tmail = id_tmail;
         this.mail = mail;
         

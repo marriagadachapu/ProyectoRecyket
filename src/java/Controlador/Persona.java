@@ -12,12 +12,12 @@ import java.sql.SQLException;
  *
  * @author Administrador
  */
-public class Telefono {
+public class Persona {
 
     private int telefono;
     private int id_tipo;
 
-    public Telefono(int telefono, int id_tipo) {
+    public Persona(int telefono, int id_tipo) {
         this.telefono = telefono;
         this.id_tipo = id_tipo;
     }

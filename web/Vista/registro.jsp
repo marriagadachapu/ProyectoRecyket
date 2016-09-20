@@ -1,4 +1,3 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,7 +31,7 @@
 	<!-- end #header2 -->
 </div>
 <!-- end #bg2 -->
-<form name="formregistro" method="post" action="guardarRegistro.jsp">
+<form name="formregistro" method="post" action="/ServletNuevoName">
 
 <div id="bg3">
 	<div id="bg4">
@@ -47,8 +46,8 @@
 						<div class="entry"> 
 							
                                                     <div>
-                                                        <input type="radio" name="Grupo1" value="1" checked="checked" title="Persona">Persona</input>
-                                                        <input type="radio" name="Grupo1" value="2"  title="Sociedad">Sociedad</input>
+                                                        <input type="radio" name="Grupo1" value="1" checked="checked" title="Persona"> Persona </input>
+                                                        <input type="radio" name="Grupo1" value="2"  title="Sociedad"> Sociedad</input>
                                                     </div> 
                                 <div>&nbsp;</div>                                                   
            <fieldset>

@@ -63,11 +63,10 @@
       </tr>
       <tr>
        <td>Contraseña:</td>
-                        <td><input type="password" id="contrasena" name="contrasena" maxlength="8"/></td>
+            <td><input type="password" id="contrasena" name="contrasena" maxlength="8"/></td>
             <td> <script type="text/javascript">
 		            var usuario = new LiveValidation('usuario');
-		            usuario.add(Validate.Presence);
-                           
+		            usuario.add(Validate.Presence);                         
 		          </script>
                 </td>
       </tr>

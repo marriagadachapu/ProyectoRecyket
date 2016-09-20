@@ -20,23 +20,18 @@
  session.setAttribute("sesion", usuario);
 
 %>
-<div id="bg1">
-	<div id="header">
-		<h1><a href="#">Portal Recyket</a></h1>
-        
-		
-	</div>
-	<!-- end #header -->
-</div>
 <!-- end #bg1 -->
 <div id="bg2">
 	<div id="header2">
 		<div id="menu">
 			<ul>
-				<li><a href="sesion.jsp">Inicio</a></li>
-                                <li><a href="misdatos.jsp">Mis Datos</a></li>
-                        <li><a href="agregarAmigo.jsp">Agregar Amigos</a></li>
-                            <li><a href="listamigos.jsp">Lista de Amigos</a></li>
+                            <li>
+                                <h1><a href="index.jsp">Portal Recyket</a></h1>
+                            </li>                            
+                            <li><a href="sesion.jsp">Inicio</a></li>
+                            <li><a href="misdatos.jsp">Mis Datos</a></li>
+                            <li><a href="agregarProducto.jsp">Agregar Producto</a></li>
+                            <li><a href="listaProducto.jsp">Lista de Productos</a></li>
                             <li><a href="index.jsp">Salir</a></li>
 			</ul>
 		</div>
@@ -60,12 +55,12 @@
 				<div id="content">
 					<div class="post">
 						<div class="title">
-							<h2><a href="#">Lista de Amigos</a></h2>
+							<h2>Lista de Productos</h2>
 							<p></p>
 						</div>
 						<div class="entry">
                                                     <fieldset>
-             <legend id="legend">Lista de Amigos</legend>
+             <legend id="legend">Lista de Productos</legend>
 							agregar datos aqui
 
                                                     </fieldset>
@@ -88,11 +83,11 @@
 					<ul>
 						<li>
 							<h2>Menu</h2>
-						<p>.<a href="sesion.jsp">Inicio</a></p>
+					    <p>.<a href="sesion.jsp">Inicio</a></p>
    					    <p>.<a href="misdatos.jsp">Mis Datos</a></p>
-                        <p>.<a href="agregarAmigo.jsp">Agregar Amigos</a></p>
-                        <p>.<a href="listamigos.jsp">Lista de Amigos</a></p>
-                        <p>.<a href="index.jsp">Salir</a></p></li>
+                                            <p>.<a href="agregarProducto.jsp">Agregar Producto</a></p>
+                                            <p>.<a href="listaProducto.jsp">Lista de Productos</a></p>
+                                            <p>.<a href="index.jsp">Salir</a></p></li>
 					
 					</ul>
 				</div>

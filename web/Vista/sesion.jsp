@@ -23,8 +23,8 @@
                             </li>                            
                             <li><a href="sesion.jsp">Inicio</a></li>
                             <li><a href="misdatos.jsp">Mis Datos</a></li>
-                            <li><a href="agregarAmigo.jsp">Agregar Amigos</a></li>
-                            <li><a href="listamigos.jsp">Lista de Amigos</a></li>
+                            <li><a href="agregarProducto.jsp">Agregar Producto</a></li>
+                            <li><a href="listaProducto.jsp">Lista de Productos</a></li>
                             <li><a href="index.jsp">Salir</a></li>
 				
 			</ul>
@@ -79,13 +79,12 @@
 				<div id="sidebar">
 					<ul>
 						<li>
-							<h2>Menu</h2>
-		                                                       
-                        <p>.<a href="sesion.jsp">Inicio</a></p>
-        	        <p>.<a href="misdatos.jsp">Mis Datos</a></p>
-                        <p>.<a href="agregarAmigo.jsp">Agregar Amigos</a></p>
-                        <p>.<a href="listamigos.jsp">Lista de Amigos</a></p>
-                        <p>.<a href="index.jsp">Salir</a></p>
+                                                    <h2>Menu</h2>		                                                       
+                                                        <p>.<a href="sesion.jsp">Inicio</a></p>
+                                                        <p>.<a href="misdatos.jsp">Mis Datos</a></p>
+                                                        <p>.<a href="agregarProducto.jsp">Agregar Producto</a></p>
+                                                        <p>.<a href="listaProducto.jsp">Lista de Productos</a></p>
+                                                        <p>.<a href="index.jsp">Salir</a></p>
 						</li>
 					
 					</ul>

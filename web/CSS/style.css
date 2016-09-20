@@ -79,7 +79,7 @@ img.right {
 }
 
 #bg4 {
-	background: url(../fondos/bg01.jpg) ;
+	background: url(../fondos/bg01.jpg)  no-repeat center top;
 }
 
 #bg5 {

@@ -13,40 +13,35 @@
 </head>
 
 <body>
-       
+ <div id="bg2">
+	<div id="header2">
+		<div id="menu">
+			<ul>
+                            <li>
+                                <h1><a href="index.jsp">Portal Recyket</a></h1>
+                            </li>                            
+                            <li><a href="ise.jsp">Inicio</a></li>
+                            <li><a href="misdatos.jsp">Mis Datos</a></li>
+                            <li><a href="agregarProducto.jsp">Agregar Producto</a></li>
+                            <li><a href="listaProducto.jsp">Lista de Productos</a></li>
+                            <li><a href="index.jsp">Salir</a></li>
+				
+			</ul>
+		</div>
+		<!-- end #menu -->
+				</div>
+
+		<!-- end #search -->
+	</div>
+	<!-- end #header2 -->
+</div>      
       <form name="Index" method="post" action="sesion.jsp">
                   <%
    String usuario = new String("user");
  session.setAttribute("sesion", usuario);
 
 %>
-<div id="bg1">
-	<div id="header">
-		<h1><a href="#">Portal Recyket</a></h1>
-       
-		
-	</div>
-	<!-- end #header -->
-</div>
-<!-- end #bg1 -->
-<div id="bg2">
-	<div id="header2">
-		<div id="menu">
-			<ul>
-				<li><a href="ise.jsp">Inicio</a></li>
-                <li><a href="misdatos.jsp">Mis Datos</a></li>
-				<li><a href="agregarAmigo.jsp">Agregar Amigos</a></li>
-                <li><a href="listamigos.jsp">Lista de Amigos</a></li>
-                <li><a href="index.jsp">Salir</a></li>
-				
-			</ul>
-		</div>
-		<!-- end #menu -->
-		
-		<!-- end #search -->
-	</div>
-	<!-- end #header2 -->
-</div>
+
 <!-- end #bg2 -->
 <div id="bg3">
 	<div id="bg4">
@@ -55,7 +50,7 @@
 				<div id="content">
 					<div class="post">
 						<div class="title">
-							<h2><a href="#">Registro Amigos</a></h2>
+							<h2>Registro Producto</a</h2>
 							<p></p>
 						</div>
 						<div class="entry"> 
@@ -68,11 +63,12 @@
 
 
      <fieldset>
-             <legend id="legend">Agregar Amigo</legend>
-    <table id="tabla" align="left">
+             <legend id="legend">Agregar Producto</legend>
+<div id="tabla">
+    <table>
             <tr>
-                <td>Nombre:</td>
-                <td><input type="text" id="nombre" name="nombre"/>
+                <td>Nombre Producto:</td>
+                <td colspan="2"><input type="text" id="nombre" name="nombre"/>
                 </td>
                 <td> <script type="text/javascript">
 		            var nombre = new LiveValidation('nombre');
@@ -82,7 +78,7 @@
                 </td>
             </tr>
              <tr>
-                <td>Apellido Paterno:</td>
+                <td>A</td>
                 <td><input type="text" id="apaterno" name="apaterno"/>
                 </td>
                 <td><script type="text/javascript">
@@ -93,10 +89,10 @@
                 </td>
              </tr>
              <tr>
-                <td>Apellido Materno</td>
+                <td>Ap</td>
                 <td><input type="text" id="amaterno" name="amaterno"/>
                 </td>
-                <td><script type="text/javascript">
+                <td colspan="2"><script type="text/javascript">
 		            var amaterno = new LiveValidation('amaterno');
 		            amaterno.add(Validate.Presence);
                             amaterno.add( Validate.Length, { minimum: 2, maximum: 20 } );
@@ -105,10 +101,10 @@
              </tr>
             
              <tr>
-                <td>Telefono</td>
+                <td>Tel</td>
                 <td><input type="text" id="telefono" name="telefono"/>
                 </td>
-             <td><script type="text/javascript">
+                <td colspan="2"><script type="text/javascript">
                       var telefono = new LiveValidation('telefono');
 telefono.add( Validate.Numericality, { onlyInteger: true } );
 telefono.add(Validate.Presence);
@@ -117,44 +113,41 @@ telefono.add( Validate.Length, { minimum: 5, maximum: 12 } );
              </tr>
              <tr>
                  <td></td>
-                     <td><select name="tipotel">
+                 <td colspan="2"><select name="tipotel">
                     <option>SELECCIONAR TIPO</option>
-                    <option>CASA</option>
-                    <option>OFICINA</option>
-                    <option>FAX</option>
-                    <option>MOVIL</option>
                 </select>
 
                   </td>
+                                 <td></td>
             </tr>
              <tr>
                 <td>Mail</td>
-                <td><input type="text" id="mail" name="mail"/></td>
-             <td> <script type="text/javascript">
+                <td colspan="2"><input type="text" id="mail" name="mail"/></td>
+             <td> 
+                 <script type="text/javascript">
 		            var mail = new LiveValidation('mail');
 		            mail.add(Validate.Email );
                             mail.add(Validate.Presence);
 		          </script>
                  </td>
              </tr>
-             <tr>
-                 <td></td>
-                     <td><select name="tipomail">
-                    <option>SELECCIONAR TIPO</option>
-                    <option>CORPORATIVO</option>
-                    <option>PERSONAL</option>
-                        </select>
-                  </td>
-            </tr>
-
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
             
-             <tr>
+             <tr class="right">
+                    <td></td>
+                    <td></td>                 
                 <td><button  type="submit">Guardar</button></td>
                 <td><button type="reset">Borrar</button></td>
             </tr>
 
 
         </table>
+</div>
               </fieldset>
 						</div>
 						<div class="meta">
@@ -174,12 +167,12 @@ telefono.add( Validate.Length, { minimum: 5, maximum: 12 } );
 				<div id="sidebar">
 					<ul>
 						<li>
-							<h2>Menu</h2>
-						<p>.<a href="sesion.jsp">Inicio</a></p>
+                                                <h2>Menu</h2>
+					    <p>.<a href="sesion.jsp">Inicio</a></p>
    					    <p>.<a href="misdatos.jsp">Mis Datos</a></p>
-                        <p>.<a href="agregarAmigo.jsp">Agregar Amigos</a></p>
-                        <p>.<a href="listamigos.jsp">Lista de Amigos</a></p>
-                        <p>.<a href="index.jsp">Salir</a></p>
+                                            <p>.<a href="agregarProducto.jsp">Agregar Producto</a></p>
+                                            <p>.<a href="listaProducto.jsp">Lista de Productos</a></p>
+                                            <p>.<a href="index.jsp">Salir</a></p>
 						</li>
 					
 					</ul>

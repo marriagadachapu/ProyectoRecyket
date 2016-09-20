@@ -11,23 +11,23 @@ import java.util.ArrayList;
  *
  * @author Administrador
  */
-public class Amigo {
+public class Producto {
  private String n_amigo;
     private String ap_amigo;
     private String am_amigo;
-    private ArrayList<Mail> mail;
-    private ArrayList<Telefono> telefono;
+    private ArrayList<Sociedad> mail;
+    private ArrayList<Persona> telefono;
 
-    public Amigo(){
+    public Producto(){
         n_amigo = new String();
         ap_amigo = new String();
         am_amigo = new String();
-        mail = new ArrayList<Mail>();
-        telefono = new ArrayList<Telefono>();
+        mail = new ArrayList<Sociedad>();
+        telefono = new ArrayList<Persona>();
 
     }
 
-      public Amigo(String n_amigo, String ap_amigo, String am_amigo, ArrayList<Mail> mail, ArrayList<Telefono> telefono) {
+      public Producto(String n_amigo, String ap_amigo, String am_amigo, ArrayList<Sociedad> mail, ArrayList<Persona> telefono) {
         this.n_amigo = n_amigo;
         this.ap_amigo = ap_amigo;
         this.am_amigo = am_amigo;
@@ -60,19 +60,19 @@ public class Amigo {
         this.n_amigo = n_amigo;
     }
 
-    public ArrayList<Mail> getMail() {
+    public ArrayList<Sociedad> getMail() {
         return mail;
     }
 
-    public void setMail(ArrayList<Mail> mail) {
+    public void setMail(ArrayList<Sociedad> mail) {
         this.mail = mail;
     }
 
-    public ArrayList<Telefono> getTelefono() {
+    public ArrayList<Persona> getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(ArrayList<Telefono> telefono) {
+    public void setTelefono(ArrayList<Persona> telefono) {
         this.telefono = telefono;
     }
     

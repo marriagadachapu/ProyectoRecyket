@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package Controlador;
 
@@ -9,10 +5,7 @@ import DAO.ConexionBD;
 import java.sql.SQLException;
 //import java.util.ArrayList;
 
-/**
- *
- * @author Administrador
- */
+
 public class Usuario {
 
     private String nombre;

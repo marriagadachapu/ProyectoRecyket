@@ -20,23 +20,18 @@
  session.setAttribute("sesion", usuario);
 
 %>
-<div id="bg1">
-	<div id="header">
-		<h1><a href="#">Portal Recyket</a></h1>
-       
-		
-	</div>
-	<!-- end #header -->
-</div>
-<!-- end #bg1 -->
+
 <div id="bg2">
 	<div id="header2">
 		<div id="menu">
 			<ul>
-				 <li><a href="sesion.jsp">Inicio</a></li>
-                                <li><a href="misdatos.jsp">Mis Datos</a></li>
-                        <li><a href="agregarAmigo.jsp">Agregar Amigos</a></li>
-                            <li><a href="listamigos.jsp">Lista de Amigos</a></li>
+                            <li>
+                                <h1><a href="index.jsp">Portal Recyket</a></h1>
+                            </li>                            
+                            <li><a href="sesion.jsp">Inicio</a></li>
+                            <li><a href="misdatos.jsp">Mis Datos</a></li>
+                            <li><a href="agregarProducto.jsp">Agregar Producto</a></li>
+                            <li><a href="listaProducto.jsp">Lista de Productos</a></li>
                             <li><a href="index.jsp">Salir</a></li>
 			</ul>
 		</div>
@@ -138,12 +133,12 @@
 				<div id="sidebar">
 					<ul>
 						<li>
-							<h2>Menu</h2>
-						<p>.<a href="sesion.jsp">Inicio</a></p>
-   					    <p>.<a href="misdatos.jsp">Mis Datos</a></p>
-                        <p>.<a href="agregarAmigo.jsp">Agregar Amigos</a></p>
-                        <p>.<a href="listamigos.jsp">Lista de Amigos</a></p>
-                        <p>.<a href="index.jsp">Salir</a></p>
+                                                    <h2>Menu</h2>
+                                            <p>.<a href="sesion.jsp">Inicio</a></p>
+                                            <p>.<a href="misdatos.jsp">Mis Datos</a></p>
+                                            <p>.<a href="agregarProducto.jsp">Agregar Producto</a></p>
+                                            <p>.<a href="listaProducto.jsp">Lista de Productos</a></p>
+                                            <p>.<a href="index.jsp">Salir</a></p>
 						</li>
 					
 					</ul>
