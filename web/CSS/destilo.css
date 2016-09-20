@@ -1,0 +1,95 @@
+
+#encabezado{
+	text-align:center;
+	}
+body {
+	font: 100% Verdana, Comic Sans MS, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+	padding: 0;
+	text-align: left; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+	color: #000000;
+}
+
+
+.oneColElsCtrHdr #container {
+	width: 46em;  /* este ancho creará un contenedor que cabrá en una ventana de navegador 800px si el texto se deja con los tamaños de fuente predeterminados del navegador */
+	background: #FFFFFF;
+	margin: 0 auto; /* los márgenes automáticos (conjuntamente con un ancho) centran la página */
+	border: 1px solid #000000;
+	text-align: left; /* esto anula text-align: center en el elemento body. */
+}
+.oneColElsCtrHdr #header { 
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px;  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #header en lugar de texto, es posible que le interese quitar el relleno. */
+} 
+.oneColElsCtrHdr #header h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+}
+.oneColElsCtrHdr #mainContent {
+	padding: 0 20px; /* recuerde que el relleno es el espacio situado dentro del cuadro div y que el margen es el espacio situado fuera del cuadro div */
+	background: #FFFFFF;
+}
+.oneColElsCtrHdr #footer { 
+	padding: 0 10px; /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen por encima de él. */
+	background:#DDDDDD;
+} 
+.oneColElsCtrHdr #footer p {
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+}
+.LV_valid {
+    color:#00CC00;
+}
+
+.LV_invalid {
+	color:#CC0000;
+}
+
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active,
+.fieldWithErrors input.LV_valid_field,
+.fieldWithErrors textarea.LV_valid_field {
+    border: 1px solid #00CC00;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active,
+.fieldWithErrors input.LV_invalid_field,
+.fieldWithErrors textarea.LV_invalid_field {
+    border: 1px solid #CC0000;
+}
+
+#tabla{
+	border:hidden;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+
+	
+    text-align: center;
+}
+#inis{
+	background-color:#000;
+	text-align:justify;
+	background-color:#009;
+
+	
+	font-size:25px;
+	font-style:normal;
+	
+	color:#F00;
+	
+}
+
